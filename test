@@ -1,0 +1,18 @@
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+import random
+
+original = np.array([
+                    [0,0,0,0],
+                    [0,1,1,0],
+                    [0,1,1,0],
+                    [0,0,0,0]
+],dtype = np.float64)
+#print("I="+str(I))
+
+plt.title("4×4＿オリジナル")
+plt.imshow(original, cmap = 'gray', vmin = 0, vmax = 1, interpolation = 'none')
+plt.colorbar()
+#plt.savefig('4×4＿オリジナル.png')
+plt.show()
